@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="colorBackground">#ffd54f</color>
+    <color name="colorBarra">#FFC107</color>
+    <color name="colorAccent">#000000</color>
+    <color name="colorText">#000000</color>
+    <color name="backgroundText">#a8ffffff</color>
+    <color name="iconMenu">#d93e3e3e</color>
+</resources>

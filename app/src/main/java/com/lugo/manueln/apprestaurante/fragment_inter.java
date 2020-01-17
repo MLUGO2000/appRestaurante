@@ -1,0 +1,5 @@
+package com.lugo.manueln.apprestaurante;
+
+public interface fragment_inter extends menu_fragment.OnFragmentInteractionListener
+        ,pedir_fragment.OnFragmentInteractionListener,ordenes_fragment.OnFragmentInteractionListener,info_fragment.OnFragmentInteractionListener,compra_fragment.OnFragmentInteractionListener,carritoFragment.OnFragmentInteractionListener,barraFragment.OnFragmentInteractionListener {
+}

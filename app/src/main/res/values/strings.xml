@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">appRestaurante</string>
+
+    <string name="b_pedir">Pedir</string>
+    <string name="menu">Menu</string>
+    <string name="l_ordenes">Ordenes</string>
+    <string name="info">Sobre Nosotros</string>
+    <string name="calif">Comentarios</string>
+
+    //Fragment Carrito
+    <string name="ordenes">Pedidos</string>
+    <string name="enviar_pedido">Enviar</string>
+
+
+    <string name="f_Pedir_P">Listo</string>
+    <string name="f_Pedir_Agregar">Agregar Mas</string>
+
+
+    <string name="ip">http://192.168.0.104</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
