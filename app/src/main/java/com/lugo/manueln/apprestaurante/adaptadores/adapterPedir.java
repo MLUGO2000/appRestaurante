@@ -124,7 +124,8 @@ public class adapterPedir extends RecyclerView.Adapter<adapterPedir.MyViewHolder
 
     private void cargarImagen(String urlImagen, final MyViewHolder holder, final plato plato) {
 
-        String url=urlImagen;
+        String ip=context.getString(R.string.ip);
+        String url=ip + urlImagen;
 
         ImageRequest imageRequest=new ImageRequest(url, new Response.Listener<Bitmap>() {
             @Override

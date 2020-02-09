@@ -153,7 +153,10 @@ public class compra_fragment extends Fragment implements View.OnClickListener {
         return view;
     }
 
-    private void cargarImagenCompra(String url) {
+    private void cargarImagenCompra(String urlImagen) {
+
+        String ip=this.getString(R.string.ip);
+        String url=ip + urlImagen;
 
         ImageRequest miImage=new ImageRequest(url, new Response.Listener<Bitmap>() {
             @Override

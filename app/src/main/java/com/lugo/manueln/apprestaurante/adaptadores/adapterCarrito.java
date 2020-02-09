@@ -59,7 +59,10 @@ public class adapterCarrito extends RecyclerView.Adapter<adapterCarrito.MyViewHo
 
     }
 
-    private void cargarImagenCarrito(String url, final MyViewHolder holder) {
+    private void cargarImagenCarrito(String urlImagen, final MyViewHolder holder) {
+
+        String ip=context.getString(R.string.ip);
+        String url=ip+urlImagen;
 
         ImageRequest miImageR=new ImageRequest(url, new Response.Listener<Bitmap>() {
             @Override

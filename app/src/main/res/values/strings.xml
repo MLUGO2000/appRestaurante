@@ -16,7 +16,7 @@
     <string name="f_Pedir_Agregar">Agregar Mas</string>
 
 
-    <string name="ip">http://192.168.0.104</string>
+    <string name="ip"></string> <!--Rellenar Con direccion http://ip-->
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>

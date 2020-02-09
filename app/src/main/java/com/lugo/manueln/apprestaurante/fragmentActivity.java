@@ -68,69 +68,10 @@ public class fragmentActivity extends AppCompatActivity implements fragment_inte
 
 
 
-        //int idFragment=getIntent().getIntExtra("vista",0);
 
-       // Toast.makeText(this,"vista seleccionada " + idFragment,Toast.LENGTH_SHORT).show();
-
-        //dameView(idFragment);
     }
 
 
-    /*public void dameView(int id){
-        boolean fragmentSelec=false;
-        Fragment miFragment=null;
-        switch (id){
-
-            case(R.id.ButtonPedir):
-
-                Toast.makeText(this,"Procesando fragment Pedir",Toast.LENGTH_SHORT).show();
-
-                miFragment=new pedir_fragment();
-
-                fragmentSelec=true;
-
-                break;
-
-            case (R.id.ButtonMenu):
-
-                Toast.makeText(this,"Procesando Fragment Menu",Toast.LENGTH_SHORT).show();
-
-                miFragment=new menu_fragment();
-
-                fragmentSelec=true;
-
-                break;
-
-            case (R.id.ButtonOrdenes):
-
-                Toast.makeText(this,"Procesando Fragment Ordenes",Toast.LENGTH_SHORT).show();
-
-                miFragment=new ordenes_fragment();
-
-                fragmentSelec=true;
-                break;
-
-
-            case(R.id.ButtonInfo):
-
-                Toast.makeText(this,"Procesando Fragment Sobre Nosotros",Toast.LENGTH_SHORT).show();
-
-                miFragment=new info_fragment();
-
-                fragmentSelec=true;
-
-                break;
-        }
-
-        if(fragmentSelec){
-
-          onBackPressed();
-
-            getSupportFragmentManager().beginTransaction().add(R.id.fragment_base,miFragment).commit();
-
-
-        }
-    }*/
 
     @Override
     public void onFragmentInteraction(Uri uri) {
@@ -142,7 +83,6 @@ public class fragmentActivity extends AppCompatActivity implements fragment_inte
         if(getSupportFragmentManager().findFragmentById(R.id.fragment_auxiliar)!=null) {
             getSupportFragmentManager().beginTransaction().remove(getSupportFragmentManager().findFragmentById(R.id.fragment_auxiliar)).commit();
         }else{
-           // Toast.makeText(this,"No hay Fragmennt abierto",Toast.LENGTH_SHORT).show();
             super.onBackPressed();
         }
     }

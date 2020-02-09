@@ -110,7 +110,7 @@ public class barraFragment extends Fragment implements BottomNavigationView.OnNa
         boolean selecFragment=false;
         switch (item.getItemId()){
             case R.id.itemPedir:
-               // Toast.makeText(getContext(), "Presionaste Pedir", Toast.LENGTH_SHORT).show();
+
 
                 miFragment=new pedir_fragment();
                 selecFragment=true;
@@ -119,31 +119,37 @@ public class barraFragment extends Fragment implements BottomNavigationView.OnNa
                 break;
 
             case R.id.itemMenu:
-               // Toast.makeText(getContext(), "Presionaste Menu", Toast.LENGTH_SHORT).show();
+
 
                 miFragment=new menu_fragment();
                 selecFragment=true;
 
                 item.setChecked(true);
-                //navigationView.setSelectedItemId(R.id.itemMenu);
+
                 break;
 
             case R.id.itemCarrito:
-                //Toast.makeText(getContext(), "Presionaste Carrito", Toast.LENGTH_SHORT).show();
+
 
                 miFragment=new carritoFragment();
                 selecFragment=true;
 
                 item.setChecked(true);
-                //navigationView.setSelectedItemId(R.id.itemCarrito);
+
 
                 break;
         }
 
         if(miFragment!=null) {
 
+            Fragment fragmentQuitar=getActivity().getSupportFragmentManager().findFragmentById(R.id.fragment_auxiliar);
+
             FragmentTransaction fragmentTransaction= getActivity().getSupportFragmentManager().beginTransaction();
             fragmentTransaction.setCustomAnimations(R.anim.enter_from_right,R.anim.exit_to_right,R.anim.enter_from_right,R.anim.exit_to_right);
+
+            if(fragmentQuitar!=null){
+                fragmentTransaction.remove(fragmentQuitar);
+            }
            fragmentTransaction.replace(R.id.fragment_base, miFragment).commit();
         }
 

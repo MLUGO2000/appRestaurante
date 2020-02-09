@@ -83,7 +83,9 @@ public class adapterMenu extends RecyclerView.Adapter<adapterMenu.MyViewHolder> 
     }
 
     private void cargarImagenWeb(String urlImagen, final MyViewHolder holder) {
-        String url=urlImagen;
+
+        String ip=contexto.getString(R.string.ip);
+        String url=ip + urlImagen;
 
         ImageRequest imageRequest = new ImageRequest(url, new Response.Listener<Bitmap>() {
             @Override
@@ -91,7 +93,9 @@ public class adapterMenu extends RecyclerView.Adapter<adapterMenu.MyViewHolder> 
 
                 Bitmap reEscalado=Bitmap.createScaledBitmap(response,700,500,false);
 
-                holder.imageView.setImageBitmap(RedondeaImagen.suavizarEsquinas(reEscalado,50));
+              //  holder.imageView.setImageBitmap(RedondeaImagen.suavizarEsquinas(reEscalado,50));
+
+                holder.imageView.setImageBitmap(reEscalado);
 
             }
         }, 0, 0, ImageView.ScaleType.CENTER, null, new Response.ErrorListener() {

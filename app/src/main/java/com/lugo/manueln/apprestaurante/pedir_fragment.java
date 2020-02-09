@@ -102,16 +102,6 @@ public class pedir_fragment extends Fragment implements Response.Listener<JSONOb
 
         cargarWebService();
 
-        /*for (int i=0;i<10;i++){
-            plato miPlato=new plato();
-            miPlato.setNombre("NombrePlato " + (i+1));
-            miPlato.setId((i+1) + "");
-            miPlato.setDescripcion("Descripcion del plato numero " + (i+1));
-
-            miListPedir.add(miPlato);
-        }*/
-
-
 
 
 
